@@ -1,4 +1,5 @@
-﻿using System;
+﻿#region
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,6 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
-#region
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
@@ -30,7 +30,14 @@ namespace EasyCase
         private void button_Click(object sender, RoutedEventArgs e)
         {
             ///This is the beginning message.
+            int myAge;
+            string myName;
+
+            myAge = 42;
+            myName = "Zeid.Li";
+
             MessageBox.Show("The first desktop app in the book!");
+            MessageBox.Show($"{myName} {myAge}");
         }
     }
 }
